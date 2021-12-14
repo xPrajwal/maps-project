@@ -13,7 +13,7 @@ function initMap() {
   // Initializing map using google's sdk
   map = new google.maps.Map(document.getElementById("map"), {
     center: { lat: 34.240, lng: -118.527 },
-    zoom: 17.5, //zoom level of the map
+    zoom: 16, //zoom level of the map
     scrollwheel: false, //disables use of scroll wheel on the map
     scaleControl: false, //disables the zoom in/out feature of the map
     draggable: false, // map is fixed to the cordinates specified using "center" parameter above
