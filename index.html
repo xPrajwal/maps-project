@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="questions-container">
+        <h1>
+          <center>Map Games</center>
+        </h1>
+        <p id="q1">Q1. Where is the Sustainability Center?</p>
+        <p id="a1"></p>
+        <p id="q2"></p>
+        <p id="a2"></p>
+        <p id="q3"></p>
+        <p id="a3"></p>
+        <p id="q4"></p>
+        <p id="a4"></p>
+        <p id="q5"></p>
+        <p id="a5"></p>
+        <div id="high-score">High Score: <br>0</div>
+        <p id="correct-answers">Correct Answers: <br>0</p>
+        <p id="incorrect-answers">Incorrect Answers:<br>0</p>
+        <button id="reset-button">Reset</button>
+      </div>
+
+      <div id="map"></div>
+    </div>
+    <!-- Linking our JavaScript Code -->
+    <script src="script.js"></script>
+    <!-- Linking Google Maps JavaScript Library -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_Kirb2nkfxKWIETI8_s_QvbLhRvKgV08&callback=initMap" async></script>
+  </body>
+</html>
