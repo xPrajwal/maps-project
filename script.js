@@ -336,6 +336,10 @@ function initMap() {
 
 //Reset values
 function reset() {
+  //resetting counters
+  question = 0; 
+  correctAnswer = 0; 
+  incorrectAnswer = 0;
   // restting the questions
   document.querySelector("#q2").innerHTML = "";
   document.querySelector("#q3").innerHTML = "";
@@ -348,12 +352,8 @@ function reset() {
   document.querySelector("#a4").innerHTML = "";
   document.querySelector("#a5").innerHTML = "";
   // resetting results
-  document.querySelector("#correct-answers").innerHTML = "Correct Answers: <br> " + correctAnswer;;
-  document.querySelector("#incorrect-answers").innerHTML = "Incorrect Answers: <br> " + incorrectAnswer;;
-  //resetting counters
-  question = 0; 
-  correctAnswer = 0; 
-  incorrectAnswer = 0;
+  document.querySelector("#correct-answers").innerHTML = "Correct Answers: <br> " + correctAnswer;
+  document.querySelector("#incorrect-answers").innerHTML = "Incorrect Answers: <br> " + incorrectAnswer;
   // initialzing the map again removing the tints on the map from the previous attempt
   initMap(); 
 }
